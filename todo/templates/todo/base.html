@@ -1,34 +1,37 @@
-{% load static %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Django</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>>Todo App</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="{% static 'application/css/style.css' %}">
-</head>
-<body>
+    <link rel="stylesheet" href="{% static 'todo/css/style.css' %}">
+  </head>
+
+  <body>
     <!-- navabar start -->
-    <nav class="navbar navbar-expand-lg navbar navbar-white ">
-        <div class="container-fluid ">
-            <a class="navbar-brand text-danger" href="/">
-            <img src="{% static 'application/images/davul_tokmak.png' %}" alt="Hi!" width="45" height="45">
-            Bongo Todo App</a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img
+            src="{% static 'todo/images/cw_logo.png' %}"
+            alt="Hi!"
+            width="45"
+            height="45"
+          />
+          Clarusway Todo App</a
+        >
+      </div>
     </nav>
 
-
-    {% block content %}
-    
-    {% endblock content %}
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-</body>
+    {% block content %} {% endblock content %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

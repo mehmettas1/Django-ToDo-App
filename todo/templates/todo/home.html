@@ -2,20 +2,23 @@
 
 {% block content %}
 
-<form action="" method="POST">
+<div class="container">
+    <div>
+
+<form action="/add/" method="POST">
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="ADD">
 </form>
-    <ul>
-    {% for todo in todos  %}
-    
+</div>
+
+<div></div>
+<ul>
+    {% for todo in todos %}
         <li>{{todo}}</li>
-           
-        
     {% endfor %}
-    </ul>    
+</ul> 
+</div>
+</div>
 
-
-        
 {% endblock content %}
