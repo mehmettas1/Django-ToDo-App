@@ -5,7 +5,9 @@ backcall==0.2.0
 colorama==0.4.5
 debugpy==1.6.3
 decorator==5.1.1
+dj-database-url==1.0.0
 Django==4.1
+django-heroku==0.3.1
 entrypoints==0.4
 executing==0.10.0
 gunicorn==20.1.0
@@ -21,6 +23,7 @@ parso==0.8.3
 pickleshare==0.7.5
 prompt-toolkit==3.0.30
 psutil==5.9.1
+psycopg2==2.9.3
 pure-eval==0.2.2
 pycodestyle==2.9.1
 Pygments==2.13.0
