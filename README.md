@@ -1,2 +1,2 @@
 # Django-ToDo-App
-https://todo-app-djgango.herokuapp.com/
+- <a href="https://todo-app-djgango.herokuapp.com/" target="_blank" >Todo App</a>
